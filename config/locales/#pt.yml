@@ -2,7 +2,7 @@ pt:
   not_filled: 'Não preenchido'
   days: dias
   facebook_locale: pt_BR
-  failure_title: 'Por favor, corrija os seguintes erros:'
+  failure_title: 'Por favor, corrija os seguintes erros: '
   i_just_contributed: Eu acabei de apoiar o projeto %{name} na @entropia_coletiva
   'no': Não
   'yes': Sim

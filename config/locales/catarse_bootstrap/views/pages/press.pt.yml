@@ -1,0 +1,30 @@
+pt:
+  pages:
+    press:
+      page-title: "Sala de imprensa"
+      hero:
+        title: "Sala de imprensa"
+      stats:
+        title: "Nossos números"
+        subtitle: "Muitos cientistas encontraram na plataforma uma poderosa ferramenta para viabilizar financeiramente seus projetos de pesquisa. Essa história pode ser contada em números."
+        people_html: "Pessoas já apoiaram pelo menos <br>1 projeto na Entropia Coletiva"
+        projects_html: "Projetos já foram <br>financiados na Entropia Coletiva"
+        money_html: "Doados para projetos <br>publicados por aqui"
+        cta_html: "Veja dados completos separados por categoria &gt;"
+      abstract:
+        title: "A Entropia Coletiva é a primeira plataforma de crowdfunding, ou financiamento coletivo de pesquisas científicas do Brasil. Somos o ponto de encontro da nova comunidade científica, das pessoas que fazem a ciência, dos que financiam ela e de todos que sabem a importância da ciência para um país."
+      history:
+        title: "História da fundação da Entropia Coletiva"
+        subtitle: "A Entropia Coletiva foi desenvolvida por três amigos e jovens pesquisadores preocupados com a produção científica no Brasil e com o diálogo entre cientistas e população. A ideia nasceu para permitir que a população participe ativamente do processo de produção científica, apoiando financeiramente projetos e contribuindo para a ciência brasileira. 
+O objetivo da Entropia Coletiva é utilizar os conceitos da economia colaborativa para alavancar a participação popular sobre a produção científica brasileira, possibilitando assim, um modo alternativo e inovador de fazer ciência no Brasil.
+"
+        cta_html: "Leia a história completa &gt;"      
+      social:
+        title: "Acompanhe nossas histórias"
+        news: "Assine nossa newsletter semanal"
+      assets:
+        title: "Precisa de arquivos em alta resolução da nossa marca e selos?" 
+        cta_html: "Baixe nossas marcas &gt;" 
+      email:
+        title: "Vamos conversar?"
+        cta: "contato@entropiacoletiva.com"

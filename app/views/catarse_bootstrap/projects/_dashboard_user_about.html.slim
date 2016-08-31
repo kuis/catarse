@@ -3,7 +3,12 @@
   =  hidden_field_tag 'anchor', 'user_about'
   = f.simple_fields_for :user do |form|
     .w-section.section
+
       .w-container
+
+        .u-text-center.fontweight-semibold.fontsize-large= t('.about')
+        p.fontsize-base.u-text-center= t('.about_subtitle')
+
         .w-row
           .w-col.w-col-1
           .w-col.w-col-10

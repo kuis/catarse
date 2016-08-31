@@ -32,10 +32,12 @@ pt:
         reward_deliver_time: "<b>Estimativa de Entrega:</b> %{estimate}"
         reward_title: Para %{minimum} ou mais
     dashboard_user_settings:
+       bank: "Dados cadastrais e bancários"
+       bank_subtitle: "Com os dados abaixo completos, sua campanha estará pronto para ir ao ar. Após concluir o preenchimento, clique em Salvar. Revise. Se tudo estiver ok, basta apertar o botão Publicar e começar sua campanha!"
        natural: "Nome completo do titular"
        juridical: "Razão Social do titular"
        title: "Dados cadastrais e bancários"
-       subtitle_html: "Com os dados abaixo completos, sua campanha estará pronto para ir ao ar. Após concluir o preenchimento, clique em Salvar. Revise. Se tudo estiver ok, basta apertar o botão Publicar e começar sua campanha!"
+       subtitle_html: "Com os dados abaixo completos, sua campanha estará pronto para ir ao ar. Após concluir o preenchimento, clique em Salvar. Revise."
        owner_document_natural: "CPF do titular da conta bancária"
        owner_document_juridical: "CNPJ do titular da conta bancária"
        user_data_title: "Dados bancários"
@@ -113,7 +115,9 @@ pt:
       send: Enviar
       publish: Publicar
     dashboard_user_about:
-      submit: "Salvar"
+      submit: "Salvar"      
+      about: "Se apresente aos seus apoiadores."
+      about_subtitle: "Mostre que você possui capacidade técnica para desenvolver sua pesquisa. Os apoiadores querem conhecer melhor os realizadores das campanhas, utilize links que ajudem a contar sua história."
       twitter_label: "Perfil do twitter"
       twitter_hint: "Insira o link do seu perfil"
       other_link_label: "Presença na internet"

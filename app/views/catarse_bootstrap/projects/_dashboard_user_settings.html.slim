@@ -4,7 +4,14 @@
     = hidden_field_tag :anchor, 'user_settings'
     = f.simple_fields_for :account do |form|
       .w-section.section
+
+
         .w-container
+
+          .u-text-center.fontweight-semibold.fontsize-large= t('.title')
+          p.fontsize-base.u-text-center= t('.subtitle_html')
+
+
           .w-col.w-col-10.w-col-push-1
             = @project.display_errors(:user_settings)
             - if disable_edit

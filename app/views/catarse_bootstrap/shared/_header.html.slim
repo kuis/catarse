@@ -1,5 +1,7 @@
 header class="main-header w-section #{'alert' if can_display_pending_refund_alert?} #{((defined?(overlayer) && overlayer) ? 'overlayer' : '')}"
 
+
+
   .w-clearfix
     = link_to (image_tag "catarse_bootstrap/logo_big.png"), root_url(subdomain: 'www'), class: 'header-logo w-nav-brand', :title => CatarseSettings[:company_name]
 
@@ -35,5 +37,6 @@ header class="main-header w-section #{'alert' if can_display_pending_refund_aler
   = yield :headermobile_controls
 
   = render 'shared/analytics'
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
 
   

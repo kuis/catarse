@@ -93,7 +93,7 @@ pt:
         questions: "."
       draft:
         title: "%{name}, chegou a hora de postar sua campanha na Entropia Coletiva!"
-        subtitle: "Quanto mais cuidadosa e bem formatada for um campanha, maiores as chances de ele ser bem sucedido na sua campanha de captação. Antes de enviar sua campanha para a nossa análise, preencha todas as abas a esquerda com atenção. Você pode salvar as alterações e voltar ao rascunho do campanha quantas vezes for necessário. Quando tudo estiver pronto, clique no botão ENVIAR. Vamos avaliar sua campanha e entrar em contato o mais rápido possível."
+        subtitle: "Quanto mais cuidadosa e bem formatada for um campanha, maiores as chances de ele ser bem sucedido na sua campanha de captação. Antes de enviar sua campanha para a nossa análise, preencha todas as abas à esquerda com atenção. Você pode salvar as alterações e voltar ao rascunho do campanha quantas vezes for necessário. Quando tudo estiver pronto, clique no botão ENVIAR. Vamos avaliar sua campanha e entrar em contato o mais rápido possível."
         study_title: ""
       approved:
         title: "%{name}, sua campanha foi aprovado!"

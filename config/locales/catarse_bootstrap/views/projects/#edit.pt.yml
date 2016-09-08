@@ -91,7 +91,7 @@ pt:
         questions: "."
       draft:
         title: "%{name}, chegou a hora de postar seu projeto na Entropia Coletiva!"
-        subtitle: "Quanto mais cuidadoso e bem formatado for um projeto, maiores as chances de ele ser bem sucedido na sua campanha de captação. Antes de enviar seu projeto para a nossa análise, preencha todas as abas a esquerda com atenção. Você pode salvar as alterações e voltar ao rascunho do projeto quantas vezes for necessário. Quando tudo estiver pronto, clique no botão ENVIAR. Vamos avaliar seu projeto e entrar em contato o mais rápido possível."
+        subtitle: "Quanto mais cuidadoso e bem formatado for um projeto, maiores as chances de ele ser bem sucedido na sua campanha de captação. Antes de enviar seu projeto para a nossa análise, preencha todas as abas à esquerda com atenção. Você pode salvar as alterações e voltar ao rascunho do projeto quantas vezes for necessário. Quando tudo estiver pronto, clique no botão ENVIAR. Vamos avaliar seu projeto e entrar em contato o mais rápido possível."
         study_title: ""
       approved:
         title: "%{name}, seu projeto foi aprovado!"
@@ -150,7 +150,7 @@ pt:
       abstract_label: "Resumo do projeto"
       abstract_hint_html: "A primeira parte do texto deve ser dedicada a um breve resumo do projeto, explicando de forma concisa o se propõe a desenvolver, e sua importância. O leitor deve ter a capacidade de ler o resumo e poder explicar a um amigo sobre o que se trata o projeto. Seja específico sobre o que pretende alcançar e qual a hipótese científica que será testada. Cuidado para não cansar o leitor logo de início, tente deixá-lo curioso para ler o restante do texto."
       start: "Conte a história do seu projeto!"
-      start_subtitle: "Pense bem na narrativa do projeto. É ela quem encantará as pessoas e trará apoiadores. Um bom video e descrição são diferenciais de projetos financiados!"
+      start_subtitle: "Pense bem na narrativa do projeto. É ela que encantará as pessoas e trará apoiadores. Um bom video e descrição são diferenciais de projetos financiados!"
       video_url: "Vídeo do projeto"
       video_url_hint: "Importante: todos os projetos devem ser enviados com um vídeo."
       video_url_subtitle: "Link do vídeo no Youtube"

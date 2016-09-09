@@ -2,7 +2,7 @@
 - bank_account = contribution.user.bank_account
 - project = contribution.project
 - detail = contribution.details.ordered.first
-- company_name = CatarseSettings[:company_name]
+- company_name = Entropia ColetivaSettings[:company_name]
 |Olá, #{contribution.user.name}!
 p O seu reembolso não foi efetuado devido a algum erro em seus dados bancários preenchidos:
 p
@@ -20,9 +20,9 @@ br
 br
 center
   = link_to new_bank_account_url, alt: 'Solicitar Reembolso', target: '__blank' do
-    = image_tag "#{CatarseSettings[:base_url]}/assets/catarse_bootstrap/request_refund.png"
+    = image_tag "#{Entropia ColetivaSettings[:base_url]}/assets/Entropia Coletiva_bootstrap/request_refund.png"
 p
-  |Porém, se os dados informados estão corretos e mesmo assim seu reembolso não foi efetuado,  entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_contact]}. Não esqueça de nos informar a chave de identificação do seu apoio, que é: #{detail.payment_id}.
+  |Porém, se os dados informados estão corretos e mesmo assim seu reembolso não foi efetuado,  entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_ta Entropia ColetivaSettings[:email_contact]}. Não esqueça de nos informar a chave de identificação do seu apoio, que é: #{detail.payment_id}.
 p Um abraço,
 p
   | #{company_name}

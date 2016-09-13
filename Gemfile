@@ -42,7 +42,7 @@ gem 'mixpanel_client'
 gem 'iugu'
 #gem 'catarse_iugu', '~> 0.1.7', git: "git://github.com/yurimello/catarse_iugu"
 #gem 'catarse_iugu', '~> 0.1.8', git: "git@bitbucket.org:frederico_reis/catarse_iugu.git"
-gem 'catarse_iugu', '~> 0.2.4', git: "git://github.com/frederico-reis/catarse_iugu"
+gem 'catarse_iugu', '~> 0.2.5', git: "git://github.com/frederico-reis/catarse_iugu"
 #gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 

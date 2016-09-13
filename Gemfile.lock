@@ -37,9 +37,9 @@ GIT
 
 GIT
   remote: git://github.com/frederico-reis/catarse_iugu
-  revision: 66271f81fe56520129e9a5c542eb39f5d9760e25
+  revision: ba24ae81a31f0440bd1e446abb6f11394d730750
   specs:
-    catarse_iugu (0.2.4)
+    catarse_iugu (0.2.5)
       iugu
       rails (~> 4.1)
       slim-rails
@@ -706,7 +706,7 @@ DEPENDENCIES
   capybara (~> 2.2.0)
   carrierwave (~> 0.10.0)
   catarse_api!
-  catarse_iugu (~> 0.2.4)!
+  catarse_iugu (~> 0.2.5)!
   catarse_monkeymail (>= 0.1.6)
   catarse_settings_db (>= 0.1.0)
   chartkick

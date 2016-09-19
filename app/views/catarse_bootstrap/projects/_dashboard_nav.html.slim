@@ -31,7 +31,7 @@ nav.w-section.dashboard-nav.side
   = link_to (edit ? '#project' : edit_project_path(@project, anchor: 'project')), id: 'dashboard_project_link', class: 'dashboard-nav-link-left' , data: {target: '#dashboard_project', tab_group: 'edit'} do
     = @project.decorate.status_icon_for('project')
     = t('.project_tab')
-  = link_to (edit ? '#reward' : edit_project_path(@project, anchor: 'reward')), id: 'dashboard_reward_link', class: 'dashboard-nav-link-left' , data: {target: '#dashboard_reward', tab_group: 'edit'} do
+  /= link_to (edit ? '#reward' : edit_project_path(@project, anchor: 'reward')), id: 'dashboard_reward_link', class: 'dashboard-nav-link-left' , data: {target: '#dashboard_reward', tab_group: 'edit'} do
     = @project.decorate.status_icon_for('reward')
     = t('.rewards_tab')
 

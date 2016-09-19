@@ -33,7 +33,8 @@
         /  .text.or= t('or')
 
         .login-fb
-          /= link_to t('.form.inputs.facebook'), user_omniauth_authorize_path(provider: :facebook, locale: nil), class: 'btn-login btn-medium btn-fb'
-          /= link_to t('.form.inputs.facebook'), class: 'btn-login btn-medium btn-fb'
+          
+          = link_to t('.form.inputs.facebook'), user_omniauth_authorize_path(provider: :facebook, locale: nil), class: 'btn-login btn-medium btn-fb'
+         
 
 

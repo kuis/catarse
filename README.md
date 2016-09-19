@@ -1,17 +1,14 @@
-# Catarse
-[![Circle CI](https://circleci.com/gh/catarse/catarse/tree/master.svg?style=svg)](https://circleci.com/gh/catarse/catarse/tree/master)
-[![Coverage Status](https://coveralls.io/repos/catarse/catarse/badge.svg?branch=master)](https://coveralls.io/r/catarse/catarse?branch=master)
-[![Code Climate](https://codeclimate.com/github/catarse/catarse/badges/gpa.svg)](https://codeclimate.com/github/catarse/catarse)
+# Entropia Coletiva
 
-The first crowdfunding platform from Brazil
+The first science crowdfunding platform from Brazil
 
-## An open-source crowdfunding platform for creative projects
 
-Welcome to Catarse's source code repository.
+
+Welcome to Entropia Coletiva's source code repository.
 Our goal with opening the source code is to stimulate the creation of a community of developers around a high-quality crowdfunding platform.
 
-You can see the software in action in http://catarse.me.
-The official repo is https://github.com/catarse/catarse
+You can see the software in action in http://Entropia Coletiva.me.
+The official repo is https://github.com/Entropia Coletiva/Entropia Coletiva
 
 ## Getting started
 
@@ -31,11 +28,11 @@ To run this project you need to have:
 
 * Clone the project
 
-        $ git clone https://github.com/catarse/catarse.git
+        $ git clone https://github.com/Entropia Coletiva/Entropia Coletiva.git
 
 * Enter project folder
 
-        $ cd catarse
+        $ cd Entropia Coletiva
 
 * Create the `database.yml`
 
@@ -76,22 +73,17 @@ Thanks a lot to Daniel Walmsley, from http://purpose.com, for starting the inter
 
 ## Payment gateways
 
-Currently, we support MoIP, PayPal and WePay through our payment engines. Payment engines are extensions to Catarse that implement a specific payment gateway logic.
-The current working engines are:
-* MoIP
-* PayPal
-* WePay
 
-If you have created a different payment engine to Catarse, please contact us so we can link your engine here.
-If you want to create a payment engine, please join our mailing list at http://groups.google.com/group/catarse-dev
+If you have created a different payment engine to Entropia Coletiva, please contact us so we can link your engine here.
+If you want to create a payment engine, please join our mailing list at http://groups.google.com/group/Entropia Coletiva-dev
 
 ## How to contribute with code
 
-Before contributing, take a look at our Roadmap (https://www.pivotaltracker.com/projects/427075) and discuss your plans in our mailing list (http://groups.google.com/group/catarse-dev).
+Before contributing, take a look at our Roadmap (https://www.pivotaltracker.com/projects/427075) and discuss your plans in our mailing list (http://groups.google.com/group/Entropia Coletiva-dev).
 
 Our Pivotal is concerned with user visible features using user stories. But we do have some features not visible to users that are planned such as:
-* Turn Catarse into a Rails Engine with customizable views.
-* Make an installer script to guide users through initial Catarse configuration.
+* Turn Entropia Coletiva into a Rails Engine with customizable views.
+* Make an installer script to guide users through initial Entropia Coletiva configuration.
 
 After that, just fork the project, change what you want, and send us a pull request.
 
@@ -105,12 +97,7 @@ After that, just fork the project, change what you want, and send us a pull requ
 
 ## Credits
 
-Author: Daniel Weinmann
+Author: Frederico Reis
 
-Contributors: You know who you are ;) The commit history can help, but the list was getting bigger and pointless to keep in the README.
 
-## License
 
-Copyright (c) 2011 Softa
-
-Licensed under the MIT license (see MIT-LICENSE file)

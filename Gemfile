@@ -61,7 +61,7 @@ gem 'high_voltage'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
-gem 'devise'
+gem 'devise', '~> 3.5.6'
 gem 'ezcrypto'
 gem 'pundit'
 

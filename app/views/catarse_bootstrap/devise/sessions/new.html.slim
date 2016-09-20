@@ -29,12 +29,12 @@
               label.w-form-label.fontsize-smallest= t('.form.labels.remember_me')
             = form.button :submit, t('.form.inputs.submit'), class:'btn-login btn-medium'
 
-        /.separator
-        /  .text.or= t('or')
+        .separator
+          .text.or= t('or')
 
         .login-fb
           
-          /= link_to t('.form.inputs.facebook'), user_omniauth_authorize_path(provider: :facebook, locale: nil), class: 'btn-login btn-medium btn-fb'
+          = link_to t('.form.inputs.facebook'), user_omniauth_authorize_path(provider: :facebook, locale: nil), class: 'btn-login btn-medium btn-fb'
          
 
 

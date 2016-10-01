@@ -1,6 +1,6 @@
 //= require mithril
 //= require underscore
-//= require mithril.postgrest
+//= require mithril-postgrest
 //= require moment
 //= require new_admin/init
 //= require catarse_admin

@@ -25,7 +25,7 @@
 //= require jquery-typewatch
 //= require store
 //= require mithril
-//= require mithril.postgrest
+//= require mithril-postgrest
 //= require formatter
 // *********************************
 //  Rails GEMs front-end dependencies

@@ -63,6 +63,8 @@ class RewardDecorator < Draper::Decorator
   end
 
   def display_description
-    auto_html(source.description){ html_escape; simple_format }
+    # source.description
+    link_filter = AutoHtml::Link.new(target: '_blank')
+    link_filter.call(source.description)
   end
 end

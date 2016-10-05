@@ -127,16 +127,18 @@ class ProjectsController < ApplicationController
       end
     end
 
-    unless permitted_params[:user_attributes][:links_attributes].nil?
-      permitted_params[:user_attributes][:links_attributes].each_with_index do |item|
-        link = project.user.links.find(item[1]["id"]) unless item[1]["id"].nil?
-        if item[1]["link"].strip.eql?("http://") || item[1]["link"].strip.eql?("https://")
-          link.destroy
-        else
-          if link.nil?
-            project.user.links.create(item[1])
+    unless permitted_params[:user_attributes].nil?
+      unless permitted_params[:user_attributes][:links_attributes].nil?
+        permitted_params[:user_attributes][:links_attributes].each_with_index do |item|
+          link = project.user.links.find(item[1]["id"]) unless item[1]["id"].nil?
+          if item[1]["link"].strip.eql?("http://") || item[1]["link"].strip.eql?("https://")
+            link.destroy
           else
-            link.update_attributes(item[1])
+            if link.nil?
+              project.user.links.create(item[1])
+            else
+              link.update_attributes(item[1])
+            end
           end
         end
       end

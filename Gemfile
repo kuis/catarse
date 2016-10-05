@@ -98,6 +98,9 @@ gem 'moip', github: 'catarse/moip-ruby', ref: 'c0225ad71645cd1df35dafa1e45c9f092
 gem 'httpclient',     '>= 2.2.5'
 gem 'roadie-rails', '1.1.1'
 
+#debugger
+gem 'byebug'
+
 group :production do
   # Gem used to handle image uploading
   gem 'fog', '>= 1.3.1'

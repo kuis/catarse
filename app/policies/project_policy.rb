@@ -19,7 +19,7 @@ class ProjectPolicy < ApplicationPolicy
   end
 
   def update_account?
-    record.account.invalid? || 
+    record.account.invalid? ||
       ['online', 'waiting_funds', 'successful', 'failed'].exclude?(record.state) || is_admin?
   end
 
@@ -61,7 +61,7 @@ class ProjectPolicy < ApplicationPolicy
   end
 
   def reward_attributes
-    { rewards_attributes: [:_destroy, :id, :maximum_contributions,
+    { rewards_attributes: [:id, :maximum_contributions,
                           :description, :deliver_at, :minimum_value] }
   end
 

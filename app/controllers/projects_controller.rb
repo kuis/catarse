@@ -18,7 +18,7 @@ class ProjectsController < ApplicationController
         return render_index_for_xhr_request if request.xhr?
         projects_for_home
       end
-      format.atom do 
+      format.atom do
         return render layout: false, locals: {projects: projects}
       end
       format.rss { redirect_to projects_path(format: :atom), :status => :moved_permanently }
@@ -85,7 +85,7 @@ class ProjectsController < ApplicationController
         ActiveRecord::Base.connection.execute("UPDATE projects SET uploaded_image = '#{file_name}' WHERE id = '#{project.id}'")
       end
     end
-    
+
     if (defined? params[:project][:goal])
       if params[:project][:goal].present?
         project.goal = params[:project][:goal]
@@ -115,6 +115,18 @@ class ProjectsController < ApplicationController
         project.headline = params[:project][:headline]
       end
     end
+
+    if (defined? permitted_params[:rewards_attributes])
+      permitted_params[:rewards_attributes].each_with_index do |item|
+        reward = project.rewards.find(item[1]["id"])
+        if reward.nil?
+          project.rewards.create(item[1])
+        else
+          reward.update_attributes(item[1])
+        end
+      end
+    end
+
     project.save
 
     user = User.find(project.user_id)
@@ -149,10 +161,11 @@ class ProjectsController < ApplicationController
         end
         FileUtils.cp path, Rails.root.to_s + "/public/uploads/user/uploaded_image/" + user.id.to_s + '/thumb_avatar_' + file_name
         FileUtils.cp path, Rails.root.to_s + "/public/uploads/user/uploaded_image/" + user.id.to_s + '/thumb_facebook_' + file_name
-        
+
         ActiveRecord::Base.connection.execute("UPDATE users SET uploaded_image = '#{file_name}' WHERE id = '#{user.id}'")
       end
     end
+
     user.save
 
     # if params[:project][:user_attributes][:links_attributes].present?

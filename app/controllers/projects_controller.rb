@@ -130,14 +130,14 @@ class ProjectsController < ApplicationController
     unless permitted_params[:user_attributes][:links_attributes].nil?
       permitted_params[:user_attributes][:links_attributes].each_with_index do |item|
         link = project.user.links.find(item[1]["id"]) unless item[1]["id"].nil?
-        unless item[1].link.strip!.eql?("http://") && item[1].link.strip!.eql?("https://")
+        if item[1]["link"].strip.eql?("http://") || item[1]["link"].strip.eql?("https://")
+          link.destroy
+        else
           if link.nil?
             project.user.links.create(item[1])
           else
             link.update_attributes(item[1])
           end
-        else
-          link.destroy
         end
       end
     end

@@ -116,9 +116,9 @@ class ProjectsController < ApplicationController
       end
     end
 
-    if (defined? permitted_params[:rewards_attributes])
+    unless permitted_params[:rewards_attributes].nil?
       permitted_params[:rewards_attributes].each_with_index do |item|
-        reward = project.rewards.find(item[1]["id"])
+        reward = project.rewards.find(item[1]["id"]) unless item[1]["id"].nil?
         if reward.nil?
           project.rewards.create(item[1])
         else
@@ -127,6 +127,20 @@ class ProjectsController < ApplicationController
       end
     end
 
+    unless permitted_params[:user_attributes][:links_attributes].nil?
+      permitted_params[:user_attributes][:links_attributes].each_with_index do |item|
+        link = project.user.links.find(item[1]["id"]) unless item[1]["id"].nil?
+        unless item[1].link.strip!.eql?("http://") && item[1].link.strip!.eql?("https://")
+          if link.nil?
+            project.user.links.create(item[1])
+          else
+            link.update_attributes(item[1])
+          end
+        else
+          link.destroy
+        end
+      end
+    end
     project.save
 
     user = User.find(project.user_id)

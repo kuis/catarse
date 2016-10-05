@@ -52,7 +52,7 @@ class ProjectPolicy < ApplicationPolicy
                             :id, :bank_id, :agency, :agency_digit, :account,
                             :account_digit, :owner_name, :owner_document
                           ],
-                          links_attributes: [:id, :_destroy, :link]
+                          links_attributes: [:id, :link]
                         ] }
   end
 
